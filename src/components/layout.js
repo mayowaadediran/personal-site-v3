@@ -8,7 +8,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-import "./layout.css"
+import Logo from "./../images/Logo.png"
 import { Link } from "gatsby"
 
 const ListLink = props => (
@@ -33,8 +33,8 @@ const Layout = ({ children }) => {
         }}
       >
         <header style={{ marginBottom: `1.5rem` }}>
-          <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-            <h3 style={{ display: `inline` }}>MySweetSite</h3>
+          <Link to="/" style={{ textShadow: `none`, }}>
+            <img src={Logo} alt="Mayowa Adediran"/>
           </Link>
           <ul style={{ listStyle: `none`, float: `right` }}>
             <ListLink to="/about/">about me</ListLink>
@@ -59,7 +59,7 @@ const Layout = ({ children }) => {
               justifyContent: `space-between`,
             }}>
             <li style={{ display: `inline-block`, marginLeft: `1rem` }}>
-              <a href='https://github.com/mayowaadediran'>Github</a>
+              <a href='https://github.com/mayowaadediran' target='blank'>Github</a>
             </li>
             <li style={{ display: `inline-block`, marginLeft: `1rem` }}>
               <a href='https://www.linkedin.com/in/mayowa-adediran/' target='blank' >LinkedIn</a>

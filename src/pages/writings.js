@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const Writings = () => {
   return (
-    <div>
-      
-    </div>
+    <Layout>
+      Writings
+    </Layout>
   );
 }
 

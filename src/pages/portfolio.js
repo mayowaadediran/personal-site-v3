@@ -1,10 +1,11 @@
 import React from 'react';
+import Layout from '../components/layout';
 
 const Portfolio = () => {
   return (
-    <div>
-      
-    </div>
+    <Layout>
+      <h1>My works</h1>
+    </Layout>
   );
 }
 
