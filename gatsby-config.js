@@ -1,12 +1,19 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Mayowa Adediran`,
+    description: `Mayowa Adediran's real estate on the internet`,
+    author: `@mayowaadediran`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
+     {
+       resolve: `gatsby-source-filesystem`,
+       options: {
+         path: `${__dirname}/src/markdown-pages`,
+         name: `markdown-pages`,
+       },
+     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -14,7 +21,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `pqyrqgwwmcgh`,
+        accessToken: `im80xzuokd1dxUwkE2F8PD3WaR0PxX1M0W5ZuG9WKX8`,
+      },
+    },
     `gatsby-transformer-sharp`,
+    `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
