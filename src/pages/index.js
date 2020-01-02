@@ -7,15 +7,11 @@ import {
 
 export const query = graphql `
   query HomePageQuery {
-    allContentfulProfileShortBioTextNode {
-      edges {
-        node {
-          childMarkdownRemark {
-            html
-          }
-        }
-      }
-    }
+   contentfulProfileShortBioTextNode {
+     childMarkdownRemark {
+       html
+     }
+   }
   }
 `
 
@@ -23,10 +19,10 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <h1>
-      Hi, I 'm Mayowa Adediran {}
+      Hi, I 'm Mayowa Adediran
     </h1>
     <div
-      dangerouslySetInnerHTML={{ __html: data.allContentfulProfileShortBioTextNode.edges[0].node.childMarkdownRemark.html }}
+      dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
     >
 
     </div>
