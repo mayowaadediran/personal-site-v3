@@ -25,6 +25,9 @@ const IndexPage = ({data}) => (
       dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
     >
     </div>
+    <h4>
+      Latest writings
+    </h4>
   </Layout>
 )
 

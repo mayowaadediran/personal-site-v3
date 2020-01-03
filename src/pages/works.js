@@ -5,8 +5,14 @@ import SEO from "../components/seo"
 const Portfolio = () => {
   return (
     <Layout>
-      <SEO title="Home" />
-      <h1>My works</h1>
+      <SEO title="Work" />
+      <div>
+        <h1>works</h1>
+        <p>Work done personally or professionally as part of a team</p>
+      </div>
+      <div>
+        
+      </div>
     </Layout>
   );
 }

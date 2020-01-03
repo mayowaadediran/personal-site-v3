@@ -52,6 +52,9 @@
   font-weight: 500;
   color: #444444;
   letter-spacing: 0.5px;
+  h5 {
+    margin: 0;
+  }
 }
 
 .footer {
@@ -59,6 +62,8 @@
   flex-direction: column;
   align-items: center;
   padding: 10px 0;
+  border-top: 1px solid #979797;
+  margin-top: 50px;
   @media screen and (min-width: $break-point-s) {
     flex-direction: row;
     justify-content: space-between;

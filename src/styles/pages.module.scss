@@ -1,0 +1,9 @@
+@import './main.scss';
+
+.about-skills {
+  @media screen and (min-width: $break-point-s) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

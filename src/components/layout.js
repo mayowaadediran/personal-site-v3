@@ -5,7 +5,9 @@ import { Link } from "gatsby"
 import styles from "./layout.module.scss"
 
 const NavLink = props => (
-  <Link to={props.to} className={styles.navLink}>{props.children}</Link>
+  <Link to={props.to} className={styles.navLink}>
+    <h5>{props.children}</h5>
+  </Link>
 )
 
 const Layout = ({ children }) => {
@@ -19,9 +21,9 @@ const Layout = ({ children }) => {
               <img src={Logo} alt="Mayowa Adediran"/>
             </Link>
             <nav className={styles.nav}>
-              <NavLink to="/about/">About me</NavLink>
-              <NavLink to="/works/">Works</NavLink>
-              <NavLink to="/writings/">Writings</NavLink>
+              <NavLink to="/about/">about me</NavLink>
+              <NavLink to="/works/">works</NavLink>
+              <NavLink to="/writings/">writings</NavLink>
             </nav>
           </header>
           <main>
