@@ -1,0 +1,87 @@
+@import '../styles/main.scss';
+
+.layout {
+  background-color: rgb(255, 249, 241);
+  min-height: 100vh;
+
+  .container {
+    @extend %container;
+     min-height: 100vh;
+     margin: 0 auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 50px;
+  width: 100%;
+  @media screen and (min-width: $break-point-s) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  margin-bottom: 5px;
+  img {
+    margin: 0;
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  @media screen and (min-width: $break-point-s) {
+    width: 50%;
+  }
+  @media screen and (min-width: $break-point-md) {
+    width: 40%;
+  }
+}
+
+.nav-link {
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 500;
+  color: #444444;
+  letter-spacing: 0.5px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  @media screen and (min-width: $break-point-s) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  p {
+    margin: 0;
+    font-size: 0.8em;
+  }
+}
+
+.social {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  order: -1;
+  @media screen and (min-width: $break-point-s) {
+    order: 2;
+  }
+  li {
+    margin: 0;
+    a{
+      color: #444444;
+      font-size: 0.8em;
+    }
+  }
+}

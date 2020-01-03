@@ -19,14 +19,12 @@ const IndexPage = ({data}) => (
   <Layout>
     <SEO title="Home" />
     <h1>
-      Hi, I 'm Mayowa Adediran
+      Hi, I 'm Mayowa
     </h1>
     <div
       dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
     >
-
     </div>
-
   </Layout>
 )
 
