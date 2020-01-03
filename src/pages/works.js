@@ -2,7 +2,28 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from "../components/seo"
 
-const Portfolio = () => {
+export const query = graphql `
+  query WorksPageQuery {
+    allContentfulWorks {
+      edges {
+        node {
+          title
+          description
+          link
+          image {
+            file {
+              url
+            }
+          }
+          category
+          tag
+        }
+      }
+    }
+  }
+`
+
+const Works = () => {
   return (
     <Layout>
       <SEO title="Work" />
@@ -13,8 +34,11 @@ const Portfolio = () => {
       <div>
         
       </div>
+      <div>
+
+      </div>
     </Layout>
   );
 }
 
-export default Portfolio;
+export default Works;
