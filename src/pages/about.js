@@ -5,6 +5,8 @@ import {
   graphql,
 } from 'gatsby';
 import styles from "./../styles/pages.module.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faDownload } from "@fortawesome/free-solid-svg-icons"
 
 export const query = graphql `
   query AboutPageQuery {
@@ -27,6 +29,7 @@ export const query = graphql `
 const About = ({data}) => {
   const tools = data.contentfulProfile.tools
   const skills = data.contentfulProfile.skills
+  const url = data.contentfulProfile.resume.file.url
   console.log(data.contentfulProfile.tools)
   return (
     <Layout>
@@ -59,6 +62,10 @@ const About = ({data}) => {
           </ul>
         </div>
       </div>
+      <a href={url} target="_blank" rel="noopener noreferrer" className={styles.resume}>
+        <FontAwesomeIcon icon={faDownload} className={styles.icon}/>
+        <h6>Download Resume</h6>
+      </a>
     </Layout>
   );
 }

@@ -7,3 +7,29 @@
     justify-content: space-between;
   }
 }
+
+.index-head {
+  margin-bottom: 50px;
+}
+
+.resume {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fafafa;
+  border: 1px solid #727272;
+  text-decoration: none;
+  text-transform: uppercase;
+  .icon {
+    display: inline-block;
+    color: #818181;
+    margin-right: 10px;
+  }
+
+  h6 {
+    display: inline-block;
+    font-size: 0.6em;
+    color: #818181;
+    margin: 0;
+  }
+
+}
