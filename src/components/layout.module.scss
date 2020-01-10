@@ -38,8 +38,10 @@
   display: flex;
   justify-content: space-between;
   width: 70%;
+  margin-top: 20px;
   @media screen and (min-width: $break-point-s) {
     width: 50%;
+    margin-top: 0px;
   }
   @media screen and (min-width: $break-point-md) {
     width: 40%;
