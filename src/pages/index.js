@@ -20,12 +20,13 @@ export const query = graphql `
 
 const IndexPage = ({data}) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO 
+      />
     <div className={styles.indexHead}>
       <h1>
         Hi, I 'm Mayowa
       </h1>
-      <Image />
+      {/* <Image /> */}
     </div>
     <div
       dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}

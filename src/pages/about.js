@@ -33,9 +33,13 @@ const About = ({data}) => {
   console.log(data.contentfulProfile.tools)
   return (
     <Layout>
-    <SEO title="About Me"/>
+    <SEO 
+      title="About Me"
+      description="My experience so far"
+      />
       <div>
         <h1>about me</h1>
+        <h5>My experience so far</h5>
       </div>
       <div>
         <div dangerouslySetInnerHTML={{ __html: data.contentfulProfile.childContentfulProfileLongBioTextNode.childMarkdownRemark.html }}></div>

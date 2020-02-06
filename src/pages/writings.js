@@ -5,10 +5,13 @@ import SEO from "../components/seo"
 const Writings = () => {
   return (
     <Layout>
-      <SEO title="Writing" />
+      <SEO 
+        title="Writings" 
+        description = "Essays on my thoughts, ideas and experiences in my progression as software developer"
+        />
       <div>
         <h1>writings</h1>
-        <p>Thoughts, ideas and experiences</p>
+        <p>Essays on my thoughts, ideas and experiences as a software developer</p>
       </div>
     </Layout>
   );

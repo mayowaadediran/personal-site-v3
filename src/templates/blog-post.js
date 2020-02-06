@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 export default ({data}) => {
@@ -7,6 +8,12 @@ export default ({data}) => {
   const post = data.allContentfulWritings.edges[0].node
   return (
     <Layout>
+      <SEO 
+        title={post.title} 
+        description ={post.description}
+        article
+        image={post.image}
+        />
       <div>
         <h2>
           {post.title}

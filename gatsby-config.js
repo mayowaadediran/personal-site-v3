@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Mayowa Adediran`,
-    description: `Mayowa Adediran's real estate on the internet`,
+    title: `Hi`,
+    titleTemplate: "%s · Mayowa Adediran | Software Developer",
+    description: `Mayowa Adediran's personal space and portfolio on the internet, software developer from Lagos, Nigeria`,
     author: `@mayowaadediran`,
+    url: `https://mayowaadediran.me`,
+    image: "/images/mans_not_smiling.png"
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

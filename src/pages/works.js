@@ -30,15 +30,20 @@ const Works = ({data}) => {
 
   return (
     <Layout>
-      <SEO title="Work" />
+      <SEO 
+        title="Work" 
+        description="Work done as a part of a team or personally"
+      />
       <div>
         <h1>works</h1>
+       
       </div>
       <div>
+        <h5>Work done as a part of a team</h5>
         <WorkCard works={professionalWork}/>
       </div>
       <div>
-        <h4>Personal Work</h4>
+        <h5>Personal Work</h5>
         <WorkCard works={personalWork}/>
       </div>
     </Layout>
