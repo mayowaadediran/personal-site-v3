@@ -4,14 +4,13 @@ import SEO from "../components/seo"
 import { graphql } from "gatsby"
 
 export default ({data}) => {
-  console.log(data)
   const post = data.allContentfulWritings.edges[0].node
   return (
     <Layout>
       <SEO 
         title={post.title} 
         description ={post.description}
-        article
+        article 
         image={post.image}
         />
       <div>
