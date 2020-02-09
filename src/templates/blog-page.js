@@ -3,6 +3,7 @@ import Layout from '../components/layout';
 import SEO from "../components/seo"
 import { Link, graphql } from 'gatsby'
 import BlogTitle from '../components/BlogTitle/index'
+import styles from '../styles/pages.module.scss'
 import moment from 'moment'
 
 
@@ -39,25 +40,23 @@ class Writings extends Component {
             </div>
           )
         })}
-        <ul>
+        <div className={styles.pagination}>
           {!isFirst && (
             <Link to={prevPage} rel="prev">
                ← Previous Page
             </Link>
           )}
           {Array.from({length: numPages}, (_, i)=> (
-            <li>
               <Link to={`/writings/${i === 0 ? '' : i + 1}`}>
                 {i + 1}
               </Link>
-            </li>
           ))}
           {!isLast && (
             <Link to={nextPage} rel="next">
               Next Page →
             </Link>
           )}
-        </ul>
+        </div>
       </Layout>
     )
   }

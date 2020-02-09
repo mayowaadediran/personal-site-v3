@@ -15,7 +15,7 @@ const IndexPage = ({data}) => (
       <div
         dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
       >
-      </div>
+    </div>
   </Layout>
 )
 

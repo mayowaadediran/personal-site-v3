@@ -1,12 +1,15 @@
 @import '../../styles/main.scss';
 
-
-h5 {
-  margin: 0;
-  color: #818181;
-}
-
-p {
-  font-size: 0.8em;
-  color: black;
+.title {
+  h5 {
+    margin: 0;
+    color: #434343;
+  }
+  small {
+    color: #434343;
+  }
+  p {
+    font-size: 0.8em;
+    color: black;
+  }
 }
