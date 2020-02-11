@@ -9,6 +9,7 @@ export default class BlogPost extends Component {
   
   render() {
     const post = this.props.data.allContentfulWritings.edges[0].node
+    
     return (
       <Layout>
         <SEO 
@@ -18,10 +19,10 @@ export default class BlogPost extends Component {
           <div className={styles.article}>
             <div className={styles.articleHead}>
               <h2>
-                {post.title}
+                {post.title} 
               </h2>
               <p>
-               {moment(post.createdAt).format('ll')}
+               {moment(post.createdAt).format('ll')}  | {post.tags.map((tag, i) => <span className={styles.tag}>{tag}{i < post.tags.length - 1 ? ',' : null} </span>)}
               </p>
               <i>{post.description.description}</i>
             </div>
