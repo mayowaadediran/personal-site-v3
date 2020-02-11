@@ -20,10 +20,13 @@ class Writings extends Component {
 
     return (
       <Layout>
-        <SEO />
+        <SEO 
+          title="Writings"
+          description="Thoughts, ideas and experiences as a software developer"
+        />
         <div>
           <h1>writings</h1>
-          <p>Essays on my thoughts, ideas and experiences as a software developer</p>
+          <p>Thoughts, ideas and experiences as a software developer</p>
         </div>
         {posts.map(({node}) => {
           return (
@@ -35,6 +38,7 @@ class Writings extends Component {
                   title={node.title}
                   createdAt={moment(node.createdAt).format('ll')}
                   description={node.description.description}
+                  tags={node.tags}
                 />
               </Link>
             </div>

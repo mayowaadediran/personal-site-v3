@@ -7,7 +7,7 @@ const index = (props) => {
       <h5>
         {props.title}
       </h5>
-      <small>{props.createdAt}</small>
+      <small>{props.createdAt} | {props.tags.map(tag => <span>{tag} </span>)}</small>
       <p>{props.description}</p>
     </div>
   );
@@ -16,22 +16,3 @@ const index = (props) => {
 export default index;
 
 
-
-// import React from 'react';
-// import Link from 'gatsby'
-
-// const BlogTitle = (props) => {
-//   return (
-//     <div>
-//      <Link to={props.to}>
-//         <h3>
-//           {props.title}
-//         </h3>
-//         <small>{props.createdAt}</small>
-//         <p>{props.description}</p>
-//       </Link>
-//     </div>
-//   );
-// }
-
-// export default BlogTitle;

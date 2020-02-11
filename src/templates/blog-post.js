@@ -1,46 +1,51 @@
-import React from "react"
+import React, { Component } from 'react'
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from "gatsby"
+import styles from '../styles/pages.module.scss'
+import moment from 'moment'
 
-export default ({data}) => {
-  const post = data.allContentfulWritings.edges[0].node
-  return (
-    <Layout>
-      <SEO 
-        title={post.title} 
-        description ={post.description}
-        article 
-        image={post.image}
+export default class BlogPost extends Component {
+  
+  render() {
+    const post = this.props.data.allContentfulWritings.edges[0].node
+    return (
+      <Layout>
+        <SEO 
+          title={post.title} 
+          description ={post.description.description}
         />
-      <div>
-        <h2>
-          {post.title}
-        </h2>
-      </div>
-    </Layout>
-  )
+          <div className={styles.article}>
+            <div className={styles.articleHead}>
+              <h2>
+                {post.title}
+              </h2>
+              <p>
+               {moment(post.createdAt).format('ll')}
+              </p>
+              <i>{post.description.description}</i>
+            </div>
+            <div dangerouslySetInnerHTML={{ __html: post.body.childMarkdownRemark.html }}>
+            </div>
+          </div>
+      </Layout>
+    )
+  }
 }
 
-// export const query = graphql `
-//   query($slug: String!) {
-//     markdownRemark(fields: { slug: { eq: $slug } }) {
-//       html
-//       frontmatter {
-//         title
-//       }
-//     }
-//   }
-// `
 
 export const query = graphql `
   query($slug: String!) {
     allContentfulWritings(sort: {fields: id}, filter: {slug: {eq: $slug}}) {
       edges {
         node {
-          createdAt(fromNow: true)
+          createdAt
           slug
           title
+          description {
+            description
+          }
+          tags
           updatedAt
           body {
             childMarkdownRemark {
