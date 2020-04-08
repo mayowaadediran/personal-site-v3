@@ -24,10 +24,6 @@ class Writings extends Component {
           title="Writings"
           description="Thoughts, ideas and experiences as a software developer"
         />
-        <div>
-          <h1>writings</h1>
-          <p>Thoughts, ideas and experiences as a software developer</p>
-        </div>
         {posts.map(({node}) => {
           return (
             <div>

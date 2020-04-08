@@ -8,7 +8,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa"
  
 const NavLink = props => (
   <Link to={props.to} className={styles.navLink} activeClassName={styles.navActive}>
-    <h5>{props.children}</h5>
+    {props.children}
   </Link>
 )
 
@@ -22,10 +22,9 @@ const Layout = ({ children }) => {
             <img src={Logo} alt="Mayowa Adediran" />
           </Link>
           <nav className={styles.nav}>
-            <NavLink to="/">hi</NavLink>
-            <NavLink to="/about/">about me</NavLink>
-            <NavLink to="/works/">works</NavLink>
-            <NavLink to="/writings/">writings</NavLink>
+            <NavLink to="/">Hi</NavLink>
+            <NavLink to="/works/">Works</NavLink>
+            <NavLink to="/writings/">Writings</NavLink>
           </nav>
         </header>
         <main className={styles.main}>{children}</main>

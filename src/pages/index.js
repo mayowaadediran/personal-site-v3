@@ -13,6 +13,7 @@ const IndexPage = ({data}) => (
       </h1>
     </div>
       <div
+        className={styles.indexBody}
         dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
       >
     </div>

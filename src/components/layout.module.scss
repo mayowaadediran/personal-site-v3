@@ -40,11 +40,11 @@
   width: 70%;
   margin-top: 20px;
   @media screen and (min-width: $break-point-s) {
-    width: 50%;
+    justify-content: flex-end;
     margin-top: 0px;
   }
   @media screen and (min-width: $break-point-md) {
-    width: 50%;
+    justify-content: flex-end;
   }
 }
 
@@ -53,11 +53,13 @@
   position: relative;
   text-decoration: none;
   font-size: 0.8em;
-  font-weight: 500;
   color: #444444;
   letter-spacing: 0.5px;
   padding-bottom: 5px;
   transition: all 0.4s ease-out;
+  @media screen and (min-width: $break-point-s) {
+    margin-left: 20px;
+  }
   &:hover {
     opacity: 0.7;
     &::after {

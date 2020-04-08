@@ -1,4 +1,6 @@
 import "./src/styles/global.css"
+import "typeface-source-sans-pro"
+
 
 export const onServiceWorkerUpdateReady = () => {
   const answer = window.confirm(

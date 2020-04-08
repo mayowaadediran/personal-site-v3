@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Welcome to my portfolio site`,
-    titleTemplate: "%s · Mayowa Adediran | Software Developer",
-    description: `Mayowa Adediran's portfolio. Software developer from Lagos, Nigeria`,
+    titleTemplate: "%s · Mayowa Adediran | Frontend Developer",
+    description: `Mayowa Adediran | Frontend Developer`,
     author: `@mayowaadediran`,
     siteUrl: `https://mayowaadediran.me`,
     image: "/images/mans_not_smiling.png"

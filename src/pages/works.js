@@ -35,10 +35,6 @@ const Works = ({data}) => {
         description="Work done as a part of a team or personally"
       />
       <div>
-        <h1>works</h1>
-       
-      </div>
-      <div>
         <h5>Work done as a part of a team</h5>
         <WorkCard works={professionalWork}/>
       </div>
