@@ -1,5 +1,20 @@
 @import './main.scss';
 
+.title {
+  h5 {
+    margin: 0;
+    color: #434343;
+  }
+  small {
+    color: #434343;
+  }
+  p {
+    font-size: 0.8em;
+    color: black;
+  }
+}
+
+
 .about-skills {
   @media screen and (min-width: $break-point-s) {
     display: flex;
@@ -10,10 +25,10 @@
 
 .index-head {
   margin-bottom: 50px;
-  text-align: center;
   h1 {
     color: #3b3b3b;
   }
+
 }
 
 .index-body {
@@ -66,5 +81,60 @@
   }
   .tag {
     color: rgb(39, 39, 43)
+  }
+}
+
+
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 250px;
+  width: 250px;
+  padding: 20px 20px 40px 20px;
+  background-color: #fafafa;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #eee;
+  transition: all 0.35s ease-in-out;
+  &:hover {
+    border: 1px solid #a0a0a0;
+  }
+  p {
+    font-size: 0.8em;
+    line-height: 1.3;
+  }
+  .tags{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    h6 {
+      font-size: 0.6em;
+      font-weight: 300;
+      text-transform: uppercase;
+      letter-spacing: 1;
+      margin: 0;
+      margin-right: 6px;
+      margin-bottom: 4px;
+    }
+  }
+  .link {
+    display: flex;
+    margin-top: 5px;
+    a {
+      margin-right: 15px;
+      font-size: 0.8em;
+      color: #282828;
+    }
+
   }
 }

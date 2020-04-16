@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Welcome to my portfolio site`,
-    titleTemplate: "%s · Mayowa Adediran | Frontend Developer",
-    description: `Mayowa Adediran | Frontend Developer`,
+    title: `Mayowa Adediran | Frontend Developer`,
+    titleTemplate: "%s",
+    description: ``,
     author: `@mayowaadediran`,
     siteUrl: `https://mayowaadediran.me`,
     image: "/images/mans_not_smiling.png"

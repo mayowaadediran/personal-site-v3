@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import Logo from "./../images/Logo.png"
 import { Link } from "gatsby"
-import styles from "./layout.module.scss"
+import styles from "./../styles/layout.module.scss"
 
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
  

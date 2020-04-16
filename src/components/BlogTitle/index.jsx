@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './blogTitle.module.scss'
+import styles from './../../styles/pages.module.scss'
 
 const index = (props) => {
   return (
