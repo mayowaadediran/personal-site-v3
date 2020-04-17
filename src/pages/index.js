@@ -6,10 +6,12 @@ import styles from "./../styles/pages.module.scss"
 
 const IndexPage = ({data}) => (
   <Layout>
-    <SEO />
+    <SEO 
+      title="Hi!"
+    />
     <div className={styles.indexHead}>
       <h1>
-        Hi, I 'm Mayowa
+        Hi, I'm Mayowa
       </h1>
     </div>
       <div
