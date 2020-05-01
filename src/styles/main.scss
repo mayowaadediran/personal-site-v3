@@ -1,46 +1,26 @@
-h1,
-h2,
-h3, 
-h4,
-h5,
-h6 {
-  margin-left: 0;
-  margin-right: 0;
-  margin-top: 0;
-  padding-bottom: 0;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  margin-bottom: 1.45rem;
-  color: inherit;
-  font-weight: bold;
-  text-rendering: optimizeLegibility;
-  line-height: 1.1;
-}
+/*** Variables ***/
 
-h1 {
-   font-size: 2.25rem;
-}
+/* ==================
+==== Colors ==========
+=====================
 
-h2 {
-  font-size: 1.62671rem;
-}
+- Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
+- Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
+- Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
+- Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
+- Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
+- White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)
+**/
 
-h3 {
-  font-size: 1.38316rem;
-}
+$light-text: #041A25;
+$dark-text: #FFFFFF;
+$dark-background: #202C37;
+$light-background: #FAFAFA;
 
-h4 {
-  font-size: 1rem;
-}
-
-h5 {
-  font-size: 0.85028rem;
-}
-
-h6 {
-  font-size: 0.78405rem;
-}
+/*===================
+===== Breakpoints ==========
+=====================
+**/
 
 $break-point-s: 576px;
 $break-point-md: 782px;
@@ -48,12 +28,16 @@ $break-point-l: 992px;
 $break-point-xl: 1024px;
 $break-point-xxl: 1200px;
 
+
+
+/* ==================
+==== Fonts ==========
+=====================
+**/
+
+
 %container {
   width: 90%;
   margin: 0 auto;
-
-  @media screen and (min-width: $break-point-md) {
-    max-width: 500px;
-  }
 }
 

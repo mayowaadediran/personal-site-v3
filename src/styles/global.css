@@ -1,5 +1,16 @@
-html {
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;900&display=swap');
 
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans';
+}
+
+body {
+  margin: 0;
+}
+
+/* html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -509,4 +520,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */
