@@ -5,7 +5,7 @@ import WorkCard from "../components/WorkCard"
 import {
   graphql,
 } from 'gatsby';
-import styles from "./../styles/pages.module.scss"
+import './../styles/pages.scss'
 
 // export const query = graphql `
 //   query WorksPageQuery {

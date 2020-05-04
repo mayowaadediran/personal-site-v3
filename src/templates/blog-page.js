@@ -3,7 +3,6 @@ import Layout from '../components/layout';
 import SEO from "../components/seo"
 import { Link, graphql } from 'gatsby'
 import BlogTitle from '../components/BlogTitle/index'
-import styles from '../styles/pages.module.scss'
 import moment from 'moment'
 
 
@@ -40,7 +39,7 @@ class Writings extends Component {
             </div>
           )
         })}
-        <div className={styles.pagination}>
+        <div className="pagination">
           {!isFirst && (
             <Link to={prevPage} rel="prev">
                ← Previous Page

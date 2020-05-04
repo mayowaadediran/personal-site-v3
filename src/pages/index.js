@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { graphql } from 'gatsby';
-import styles from "./../styles/pages.module.scss"
+import './../styles/pages.scss'
 
 const IndexPage = ({data}) => (
   <>
@@ -10,14 +10,14 @@ const IndexPage = ({data}) => (
       title="Hi!"
     />
     <Layout>
-      <div className={styles.indexHead}>
+      <div className="index-head">
         <h1>
           Hi, I'm Mayowa
         </h1>
       </div>
-        <div
-          className={styles.indexBody}
-          dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
+      <div
+        className="index-body"
+        dangerouslySetInnerHTML={{ __html: data.contentfulProfileShortBioTextNode.childMarkdownRemark.html }}
         >
       </div>
     </Layout>

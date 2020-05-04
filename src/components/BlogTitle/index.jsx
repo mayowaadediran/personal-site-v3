@@ -1,9 +1,9 @@
 import React from 'react';
-import styles from './../../styles/pages.module.scss'
+// import styles from './../../styles/pages.module.scss'
 
 const index = (props) => {
   return (
-    <div className={styles.title}>
+    <div className="title">
       <h5>
         {props.title}
       </h5>
