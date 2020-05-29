@@ -7,8 +7,9 @@ const index = (props) => {
       <h5>
         {props.title}
       </h5>
-      <small>{props.createdAt} | {props.tags.map(tag => <span>{tag} </span>)}</small>
+      <small>{props.createdAt}</small> 
       <p>{props.description}</p>
+      <small> {props.tags.map(tag => <span>{tag} </span>)}</small>
     </div>
   );
 }

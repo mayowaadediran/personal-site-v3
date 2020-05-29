@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import { graphql } from 'gatsby';
 import './../styles/pages.scss'
 
-const IndexPage = ({data}) => (
+const Index = ({data}) => (
   <>
     <SEO 
       title="Hi!"
@@ -24,7 +24,7 @@ const IndexPage = ({data}) => (
   </>
 )
 
-export default IndexPage
+export default Index
 
 
 export const query = graphql `

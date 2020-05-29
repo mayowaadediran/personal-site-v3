@@ -1,10 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from "../components/seo";
-import WorkCard from "../components/WorkCard"
-import {
-  graphql,
-} from 'gatsby';
+import { graphql } from 'gatsby';
 import './../styles/pages.scss'
 
 // export const query = graphql `
@@ -35,30 +32,28 @@ const Works = ({data}) => {
   // const personalWork = data.allContentfulWorks.edges.filter(item => item.node.category === "Personal")
 
   return (
-    <Layout>
-      <SEO 
-        title="Work" 
-        description="Work done as a part of a team or personally"
-      />
-      <div>
-        <h3> Here are some projects and works I've done personally or as a part of a team</h3>
-      </div>
-      {/* <div>
-        <div className={styles.cardContainer}>
-          {professionalWork.map((work, i) => {
-            return <WorkCard works={work} key={i}/>
-          })}
+    <>
+      <Layout>
+        <div>
+          <h2>Projects</h2>
         </div>
-      </div>
-      <div>
-        <h5>Sides Projects</h5>
-        <div className={styles.cardContainer}>
-          {personalWork.map((work, i) => {
-            return <WorkCard works={work} key={i}/>
-          })}
+        {/* <div>
+          <div className={styles.cardContainer}>
+            {professionalWork.map((work, i) => {
+              return <WorkCard works={work} key={i}/>
+            })}
+          </div>
         </div>
-      </div> */}
-    </Layout>
+        <div>
+          <h5>Sides Projects</h5>
+          <div className={styles.cardContainer}>
+            {personalWork.map((work, i) => {
+              return <WorkCard works={work} key={i}/>
+            })}
+          </div>
+        </div> */}
+      </Layout>
+    </>
   );
 }
 

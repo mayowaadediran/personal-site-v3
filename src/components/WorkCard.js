@@ -8,7 +8,8 @@ const index = (props) => {
   const work = props.works
   console.log(work)
   return (
-    <div className="card"
+    <div 
+      className="card"
       style={work.node.image !== null ? {"background-image" : `linear-gradient(rgba(102, 102, 102, 0.86), rgba(102, 102, 102, 0.86)), url(${work.node.image.file.url})`, 
       backgroundPosition: 'center', 
       backgroundColor: '#ccc',
@@ -18,11 +19,9 @@ const index = (props) => {
       <p>{work.node.description}</p>
       <div className="cardBottom">
         <ul className="tags">
-          {work.node.tag
-            ? work.node.tag.map((tags, i) => {
-                return <h6 key={i}>{tags}</h6>
-              })
-            : null}
+          {work.node.tag ? work.node.tag.map((tags, i) => { 
+            return <h6 key={i}>{tags}</h6>
+          }) : null}
         </ul>
       </div>
       <div className="link">

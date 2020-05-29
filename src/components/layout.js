@@ -18,11 +18,11 @@ const Layout = ({ children }) => {
             <Link to="/" className="main-nav__link" activeClassName="main-nav__link--active">
               about
             </Link>
-            <Link to="/works" className="main-nav__link" activeClassName="main-nav__link--active">
-              works
+            <Link to="/projects" className="main-nav__link" activeClassName="main-nav__link--active">
+              projects
             </Link>
-            <Link to="/writings" className="main-nav__link" activeClassName="main-nav__link--active">
-              writings
+            <Link to="/blog" className="main-nav__link" activeClassName="main-nav__link--active">
+              blog
             </Link>
           </div>
         </nav>
