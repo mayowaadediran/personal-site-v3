@@ -15,7 +15,7 @@ export default class BlogPost extends Component {
           title={post.title} 
           description ={post.description.description}
         />
-          <div className="article">
+          {/* <div className="article">
             <div className="article-head">
               <h2>
                 {post.title} 
@@ -27,34 +27,34 @@ export default class BlogPost extends Component {
             </div>
             <div dangerouslySetInnerHTML={{ __html: post.body.childMarkdownRemark.html }}>
             </div>
-          </div>
+          </div> */}
       </Layout>
     )
   }
 }
 
 
-export const query = graphql `
-  query($slug: String!) {
-    allContentfulWritings(sort: {fields: id}, filter: {slug: {eq: $slug}}) {
-      edges {
-        node {
-          createdAt
-          slug
-          title
-          description {
-            description
-          }
-          tags
-          updatedAt
-          body {
-            childMarkdownRemark {
-              html
-              timeToRead
-            }
-          }
-        }
-      }
-    }
-  }
-`
+// export const query = graphql `
+//   query($slug: String!) {
+//     allContentfulWritings(sort: {fields: id}, filter: {slug: {eq: $slug}}) {
+//       edges {
+//         node {
+//           createdAt
+//           slug
+//           title
+//           description {
+//             description
+//           }
+//           tags
+//           updatedAt
+//           body {
+//             childMarkdownRemark {
+//               html
+//               timeToRead
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+// `
