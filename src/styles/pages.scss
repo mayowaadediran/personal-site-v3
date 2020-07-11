@@ -22,7 +22,6 @@
 
 
 
-
 .title {
   h5 {
     margin: 0;
@@ -102,61 +101,60 @@
 
 
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+/******** PROJECTS *********/ 
+
+
+.project {
+  margin-bottom: 30px;
 }
 
-
-.card {
+.project-list {
+  margin-top: 50px;
+}
+.project__title {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 250px;
-  width: 250px;
-  padding: 20px 20px 40px 20px;
-  // background-color: #fafafa;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  border: 1px solid #eee;
-  transition: all 0.35s ease-in-out;
-  &:hover {
-    border: 1px solid #a0a0a0;
-  }
-  h5 {
-    color: whitesmoke;
-  }
-  p {
-    font-size: 0.8em;
-    line-height: 1.3;
-    color: whitesmoke;
-  }
-  .tags{
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    margin: 0;
-    h6 {
-      font-size: 0.6em;
-      color: whitesmoke;
-      text-transform: uppercase;
-      letter-spacing: 1;
-      margin: 0;
-      margin-right: 6px;
-      margin-bottom: 4px;
-    }
-  }
-  .link {
-    display: flex;
-    margin-top: 5px;
-    a {
-      margin-right: 15px;
-      font-size: 0.8em;
-      color: white;
-    }
 
+  &-name {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  &-icon {
+    align-self: center;
+    margin-left: 10px;
+    font-size: 0.7em;
+    color: #aaaaaa;
+  }
+}
+
+.project__description {
+  margin: 0;
+  font-size: 14px;
+}
+
+.project__tag {
+  margin: 0;
+  padding: 0;
+  list-style: none; 
+  display: flex;
+
+  &--item {
+    margin-right: 10px;
+    font-size: 12px;
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      transform: scaleX(1);
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      background-color: #444444;
+      opacity: 0.5;
+      transform-origin: bottom right;
+      // transition: transform 0.4s ease-out;
+    }
   }
 }
