@@ -1,0 +1,34 @@
+@import "../main.scss";
+
+/***** Index Page ****/
+
+.home {
+}
+
+.image_selfie {
+  height: 250px;
+  width: 250px;
+  background-color: #3b3b3b;
+  border-radius: 10px;
+
+  img {
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.index-head {
+  margin-bottom: 50px;
+
+  h1 {
+    color: #3b3b3b;
+  }
+}
+
+.index-body {
+  p {
+    font-size: 1em;
+  }
+}

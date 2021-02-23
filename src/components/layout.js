@@ -3,10 +3,9 @@ import PropTypes from "prop-types"
 import Logo from "./../images/Logo.png"
 import { Link } from "gatsby"
 import "./../styles/layout.scss"
-
 import { FaGithub, FaLinkedinIn } from "react-icons/fa"
-const Layout = ({ children }) => {
 
+const Layout = ({ children }) => {
   return (
     <div className="layout">
       <div className="container">
@@ -15,15 +14,23 @@ const Layout = ({ children }) => {
             <img src={Logo} alt="Mayowa Adediran" />
           </Link>
           <div className="main-nav__list">
-            <Link to="/" className="main-nav__link" activeClassName="main-nav__link--active">
-              about
+            <Link
+              to="/"
+              className="main-nav__link"
+              activeClassName="main-nav__link--active"
+            >
+              hi
             </Link>
-            <Link to="/projects" className="main-nav__link" activeClassName="main-nav__link--active">
-              projects
+            <Link
+              to="/projects"
+              className="main-nav__link"
+              activeClassName="main-nav__link--active"
+            >
+              portfolio
             </Link>
-            <Link to="/blog" className="main-nav__link" activeClassName="main-nav__link--active">
+            {/* <Link to="/blog" className="main-nav__link" activeClassName="main-nav__link--active">
               blog
-            </Link>
+            </Link> */}
           </div>
         </nav>
         <main className="main">{children}</main>
