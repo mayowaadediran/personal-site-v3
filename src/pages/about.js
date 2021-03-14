@@ -9,15 +9,11 @@ const About = ({ data }) => (
     <SEO title="Hi!" />
     <Layout>
       <div className="index-head">
-        <h1>Hi, I'm Mayowa</h1>
+        <h1>About me</h1>
       </div>
       <div></div>
       <div>
-        <h2>Work</h2>
-      </div>
-
-      <div>
-        <h2>Writing</h2>
+        <h2>Experience</h2>
       </div>
     </Layout>
   </>

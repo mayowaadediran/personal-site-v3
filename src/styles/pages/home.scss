@@ -3,6 +3,8 @@
 /***** Index Page ****/
 
 .home {
+  display: flex;
+  flex-direction: column;
 }
 
 .image_selfie {
@@ -20,8 +22,6 @@
 }
 
 .index-head {
-  margin-bottom: 50px;
-
   h1 {
     color: #3b3b3b;
   }

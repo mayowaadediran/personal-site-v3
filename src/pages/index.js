@@ -6,10 +6,9 @@ import "./../styles/pages/home.scss"
 import Img from "gatsby-image"
 
 const Index = ({ data }) => {
-  console.log(data)
-
   const shortBio = data.allContentfulProfile.edges[0].node.shortBio.shortBio
   const selfie = data.allContentfulProfile.edges[0].node.selfie.fluid
+
   return (
     <>
       <SEO title="Hi!" />
@@ -18,15 +17,13 @@ const Index = ({ data }) => {
           <div className="image_selfie">
             <Img fluid={selfie} />
           </div>
-
           <div className="index-head">
-            <h1>Hi 👋🏿, I'm Mayowa</h1>
+            <h1>
+              Hi <span role="img">👋🏿</span>, I'm Mayowa
+            </h1>
           </div>
           <div className="index-body">
             <p>{shortBio}</p>
-          </div>
-          <div>
-            <p>Download Resume</p>
           </div>
         </div>
       </Layout>
