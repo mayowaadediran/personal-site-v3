@@ -30,6 +30,9 @@ export const query = graphql`
 const Project = ({ title, description, tags, link, image }) => {
   return (
     <div className="project">
+      <div className="project-image">
+        <img src={image} />
+      </div>
       <div className="project-details">
         <div className="project__title">
           <h2 className="project__title-name">{title}</h2>
@@ -73,7 +76,7 @@ const Works = ({ data }) => {
               description={project.node.description}
               link={project.node.link}
               tags={project.node.tag}
-              image={project.node.image}
+              image={project.node.image.file.url}
             />
           ))}
         </div>

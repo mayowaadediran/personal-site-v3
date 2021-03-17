@@ -25,6 +25,7 @@ const Index = ({ data }) => {
           <div className="index-body">
             <p>{shortBio}</p>
           </div>
+          <div>Email me: ddrn_mayowa@yahoo.com</div>
         </div>
       </Layout>
     </>
