@@ -38,6 +38,13 @@ const Layout = ({ children }) => {
             {/* <Link to="/blog" className="main-nav__link" activeClassName="main-nav__link--active">
               blog
             </Link> */}
+            <Link
+              to="/shop"
+              className="main-nav__link"
+              activeClassName="main-nav__link--active"
+            >
+              shop
+            </Link>
           </div>
         </nav>
         <main className="main">{children}</main>

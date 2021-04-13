@@ -5,9 +5,10 @@ module.exports = {
     description: `Frontend developer with experience in HTML, CSS, Javacript, React, React Native, Node.js, SASS`,
     author: `@mayowaadediran`,
     siteUrl: `https://mayowaadediran.me`,
-    image: "/images/mans_not_smiling.png"
+    image: "/images/mans_not_smiling.png",
   },
   plugins: [
+    `gatsby-plugin-postcss`,
     `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
