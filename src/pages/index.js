@@ -18,7 +18,7 @@ const Index = ({ data }) => {
             <Img fluid={selfie} />
           </div>
           <div className="index-head">
-            <h1>
+            <h1 className="mt-9 mb-9">
               Hi <span role="img">👋🏿</span>, I'm Mayowa
             </h1>
           </div>

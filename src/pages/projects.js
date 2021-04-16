@@ -57,7 +57,7 @@ const Project = ({ title, description, tags, link, image }) => {
   )
 }
 
-const Works = ({ data }) => {
+const Projects = ({ data }) => {
   const projects = data.allContentfulProjects.edges
 
   return (
@@ -85,4 +85,4 @@ const Works = ({ data }) => {
   )
 }
 
-export default Works
+export default Projects

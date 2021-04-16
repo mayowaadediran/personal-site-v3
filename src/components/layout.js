@@ -47,7 +47,7 @@ const Layout = ({ children }) => {
             </Link>
           </div>
         </nav>
-        <main className="main">{children}</main>
+        <main className="main w-full">{children}</main>
         <footer className="footer">
           <p>© {new Date().getFullYear()}, Mayowa Adediran</p>
           <ul className="social">
