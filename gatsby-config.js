@@ -60,6 +60,25 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-shopify",
+      options: {
+        // The domain name of your Shopify shop. This is required.
+        // Example: 'gatsby-source-shopify-test-shop' if your Shopify address is
+        // 'gatsby-source-shopify-test-shop.myshopify.com'.
+        // If you are running your shop on a custom domain, you need to use that
+        // as the shop name, without a trailing slash, for example:
+        // shopName: "gatsby-shop.com",
+        shopName: "acedevtestshop.myshopify.com",
+        // An API access token to your Shopify shop. This is required.
+        // You can generate an access token in the "Manage private apps" section
+        // of your shop's Apps settings. In the Storefront API section, be sure
+        // to select "Allow this app to access your storefront data using the
+        // Storefront API".
+        // See: https://help.shopify.com/api/custom-storefronts/storefront-api/getting-started#authentication
+        accessToken: "dce46c6eee6d263d8daea50f5a119af0",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: "UA-157795684-1",
