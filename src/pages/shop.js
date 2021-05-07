@@ -16,6 +16,12 @@ export const query = graphql`
           handle
           productType
           vendor
+          priceRange {
+            maxVariantPrice {
+              amount
+              currencyCode
+            }
+          }
           variants {
             id
             title
