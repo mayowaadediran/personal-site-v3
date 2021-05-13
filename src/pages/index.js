@@ -18,14 +18,16 @@ const Index = ({ data }) => {
             <Img fluid={selfie} />
           </div>
           <div className="index-head">
-            <h1 className="mt-9 mb-9">
+            <h1 className="mt-9 mb-9 font-bold text-2xl">
               Hi <span role="img">👋🏿</span>, I'm Mayowa
             </h1>
           </div>
           <div className="index-body">
-            <p>{shortBio}</p>
+            <p className="text-base">{shortBio}</p>
           </div>
-          <div>You can reach me via email: ddrn_mayowa@yahoo.com</div>
+          <div className="mt-5">
+            <p>You can reach me via email: ddrn_mayowa@yahoo.com</p>
+          </div>
         </div>
       </Layout>
     </>

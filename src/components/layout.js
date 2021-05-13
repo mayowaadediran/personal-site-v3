@@ -21,13 +21,13 @@ const Layout = ({ children }) => {
             >
               hi
             </Link>
-            {/* <Link
+            <Link
               to="/about"
               className="main-nav__link"
               activeClassName="main-nav__link--active"
             >
               about me
-            </Link> */}
+            </Link>
             <Link
               to="/projects"
               className="main-nav__link"
