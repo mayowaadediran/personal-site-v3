@@ -8,6 +8,7 @@ function Product({ product }) {
         <img
           src={product.images[0].originalSrc}
           className="w-full h-full object-contain"
+          alt={product.title}
         />
       </div>
       <div className="bg-white p-3 text-center">

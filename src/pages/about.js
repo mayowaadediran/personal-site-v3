@@ -10,7 +10,7 @@ const About = ({ data }) => {
     <>
       <SEO title="About" />
       <Layout>
-        <div className="mb-4">
+        <div className="mb-4 mt-5">
           <h1 className="font-bold text-xl mb-2">About me</h1>
           <div
             className="long-bio"
@@ -21,8 +21,25 @@ const About = ({ data }) => {
         <div>
           <h1 className="font-bold text-xl mb-2">Experience</h1>
           <div>
-            <h1>Kuda Microfinance Bank</h1>
-            <p className="text-sm">Software Developer</p>
+            <div>
+              <span className="text-sm mr-2 pr-2 border-r">2020 till date</span>
+              <span className="text-sm">
+                Software Developer • Kuda Microfinance Bank
+              </span>
+            </div>
+            <div>
+              <span className="text-sm mr-2 pr-2 border-r">
+                Apr 2020 - September 2020
+              </span>
+              <span className="text-sm">Frontend Developer • Swipemax</span>
+            </div>
+            <div>
+              <span className="text-sm mr-2">April 2019 - March 2020</span>
+              <span className="text-sm">
+                Software Developer • Kuda Microfinance Bank
+              </span>
+            </div>
+
             <p></p>
           </div>
         </div>
