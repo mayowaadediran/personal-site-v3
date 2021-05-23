@@ -45,6 +45,13 @@ const Layout = ({ children }) => {
             >
               shop
             </Link>
+            <Link
+              to="/shop"
+              className="main-nav__link"
+              activeClassName="main-nav__link--active"
+            >
+              cart
+            </Link>
           </div>
         </nav>
         <main className="main w-full">{children}</main>
