@@ -7,6 +7,8 @@ function ProductPage({ data }) {
 
   const [selectedVariant, setSelectedVariant] = useState([])
 
+  //additemtocart
+
   console.log(details)
   return (
     <Layout>

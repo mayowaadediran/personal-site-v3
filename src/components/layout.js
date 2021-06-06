@@ -46,7 +46,7 @@ const Layout = ({ children }) => {
               shop
             </Link>
             <Link
-              to="/shop"
+              to="/cart"
               className="main-nav__link"
               activeClassName="main-nav__link--active"
             >

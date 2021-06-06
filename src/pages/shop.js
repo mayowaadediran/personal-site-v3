@@ -43,6 +43,9 @@ const Shop = ({ data }) => {
     <>
       <SEO title="Online Dev Shop" />
       <Layout>
+        <div className="">
+          <div>Dev tees</div>
+        </div>
         <ProductsList products={products ? products : []} />
       </Layout>
     </>
