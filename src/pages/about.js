@@ -21,26 +21,40 @@ const About = ({ data }) => {
         <div>
           <h1 className="font-bold text-xl mb-2">Experience</h1>
           <div>
-            <div>
-              <span className="text-sm mr-2 pr-2 border-r">2020 till date</span>
-              <span className="text-sm">
-                Software Developer • Kuda Microfinance Bank
-              </span>
-            </div>
-            <div>
-              <span className="text-sm mr-2 pr-2 border-r">
-                Apr 2020 - September 2020
-              </span>
-              <span className="text-sm">Frontend Developer • Swipemax</span>
-            </div>
-            <div>
-              <span className="text-sm mr-2">April 2019 - March 2020</span>
-              <span className="text-sm">
-                Software Developer • Kuda Microfinance Bank
-              </span>
-            </div>
+            <div className="mb-3">
+              <div>
+                <span className="text-sm font-bold">
+                  Software Developer • Kuda Microfinance Bank |{" "}
+                </span>
+                <span className="mr-2 pr-2 text-xs font-semibold">
+                  2020 till date
+                </span>
+              </div>
 
-            <p></p>
+              <p className="text-xs leading-3">
+                Building internal tools to deliver free banking to over 1
+                million customers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="">
+          <div>
+            <h1 className="font-bold text-xl mb-2">Skills</h1>
+          </div>
+          <div>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <h1 className="font-bold text-xl mb-2">
+              Languages/Tools/Framework
+            </h1>
           </div>
         </div>
       </Layout>
